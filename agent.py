@@ -11,8 +11,7 @@ import os
 import time
 from typing import Optional
 
-TREE_PATH = os.path.join(os.path.dirname(
-    __file__), "../tree/reflection-tree.json")
+TREE_PATH = os.path.join(os.path.dirname(__file__), "reflection_tree.json")
 SLOW_PRINT = True  # Set False for instant output (useful during testing)
 
 

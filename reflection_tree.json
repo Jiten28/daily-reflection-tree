@@ -130,7 +130,7 @@
       "signal": null
     },
 
-    {
+        {
       "id": "A1_Q_CHOICE_INTERNAL",
       "parentId": null,
       "type": "question",
@@ -141,7 +141,7 @@
         "I took on something uncomfortable rather than avoiding it",
         "I let go of something I couldn't change and focused elsewhere"
       ],
-      "target": null,
+      "target": "A1_REFLECT_D",
       "signal": "axis1:internal"
     },
     {
@@ -155,7 +155,7 @@
         "I stayed quiet when maybe I should have spoken",
         "I adjusted my expectation of what was possible"
       ],
-      "target": null,
+      "target": "A1_REFLECT_D",
       "signal": "axis1:mixed"
     },
     {
@@ -169,7 +169,7 @@
         "Whether I kept trying or gave up early",
         "Honestly, I'm not sure I had anything to decide today"
       ],
-      "target": null,
+      "target": "A1_REFLECT_D",
       "signal": "axis1:external"
     },
 
@@ -311,7 +311,7 @@
       "signal": null
     },
 
-    {
+        {
       "id": "A2_Q_DISCRETIONARY",
       "parentId": null,
       "type": "question",
@@ -322,7 +322,7 @@
         "I was too absorbed in my own work to notice",
         "I don't think anyone around me had a harder day"
       ],
-      "target": null,
+      "target": "A2_REFLECT_D",
       "signal": "axis2:contribution"
     },
     {
@@ -336,7 +336,7 @@
         "No — the day didn't feel productive even though I worked",
         "I'm not sure what 'delivering' looks like in my current role"
       ],
-      "target": null,
+      "target": "A2_REFLECT_D",
       "signal": "axis2:mixed"
     },
 
@@ -506,7 +506,7 @@
       "signal": null
     },
 
-    {
+        {
       "id": "A3_Q_TRANSCEND",
       "parentId": null,
       "type": "question",
@@ -517,7 +517,7 @@
         "It didn't change it — the emotions were parallel, not competing",
         "It gave me energy — caring for something outside me fuels me"
       ],
-      "target": null,
+      "target": "A3_REFLECT_D",
       "signal": "axis3:other"
     },
     {
@@ -531,7 +531,7 @@
         "Helping someone, even briefly",
         "Honestly, it didn't feel particularly meaningful today"
       ],
-      "target": null,
+      "target": "A3_REFLECT_D",
       "signal": "axis3:self"
     },
 
