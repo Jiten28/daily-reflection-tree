@@ -1,8 +1,3 @@
----
-
-## `DESIGN.md`
-
-```markdown
 # Design Write‑Up: Daily Reflection Tree
 
 ## 1. Psychological Framework
