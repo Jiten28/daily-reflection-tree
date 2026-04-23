@@ -1,0 +1,211 @@
+{
+  "nodes": {
+    "start": {
+      "id": "start",
+      "type": "start",
+      "text": "Welcome to your Daily Reflection Tree. Let's take 5 minutes to review your day.",
+      "next": "q_locus_1"
+    },
+    "q_locus_1": {
+      "id": "q_locus_1",
+      "type": "question",
+      "text": "When something didn't go as planned today, what was your first reaction?",
+      "options": [
+        "I blamed the situation or someone else.",
+        "I looked for what I could control or learn."
+      ],
+      "next": {
+        "I blamed the situation or someone else.": "reflect_locus_victim",
+        "I looked for what I could control or learn.": "reflect_locus_victor"
+      }
+    },
+    "reflect_locus_victim": {
+      "id": "reflect_locus_victim",
+      "type": "reflection",
+      "text": "You noticed an external focus. That's human – but consider: what small thing could you have influenced?",
+      "signal": "axis1:external",
+      "next": "bridge_locus"
+    },
+    "reflect_locus_victor": {
+      "id": "reflect_locus_victor",
+      "type": "reflection",
+      "text": "You looked for agency. That's a victor mindset – it builds resilience.",
+      "signal": "axis1:internal",
+      "next": "bridge_locus"
+    },
+    "bridge_locus": {
+      "id": "bridge_locus",
+      "type": "bridge",
+      "text": "Now let's shift from 'what happened to me' to 'what I did for others'.",
+      "next": "q_orientation_1"
+    },
+    "q_orientation_1": {
+      "id": "q_orientation_1",
+      "type": "question",
+      "text": "Thinking about your achievements today, what feels more true?",
+      "options": [
+        "I got what I deserved (recognition, help, results).",
+        "I gave something valuable (time, help, effort)."
+      ],
+      "next": {
+        "I got what I deserved (recognition, help, results).": "reflect_orientation_entitlement",
+        "I gave something valuable (time, help, effort).": "reflect_orientation_contribution"
+      }
+    },
+    "reflect_orientation_entitlement": {
+      "id": "reflect_orientation_entitlement",
+      "type": "reflection",
+      "text": "Noticing what you receive is normal. But contribution often creates deeper satisfaction.",
+      "signal": "axis2:entitlement",
+      "next": "bridge_orientation"
+    },
+    "reflect_orientation_contribution": {
+      "id": "reflect_orientation_contribution",
+      "type": "reflection",
+      "text": "You're focused on giving. That's a contributor's mindset – it builds meaning.",
+      "signal": "axis2:contribution",
+      "next": "bridge_orientation"
+    },
+    "bridge_orientation": {
+      "id": "bridge_orientation",
+      "type": "bridge",
+      "text": "Now let's zoom out: beyond yourself, who else was part of your day?",
+      "next": "q_radius_1"
+    },
+    "q_radius_1": {
+      "id": "q_radius_1",
+      "type": "question",
+      "text": "When you solved a problem today, who benefited most directly?",
+      "options": [
+        "Mainly me / my own tasks.",
+        "My team, a colleague, or a customer."
+      ],
+      "next": {
+        "Mainly me / my own tasks.": "reflect_radius_self",
+        "My team, a colleague, or a customer.": "reflect_radius_others"
+      }
+    },
+    "reflect_radius_self": {
+      "id": "reflect_radius_self",
+      "type": "reflection",
+      "text": "It's natural to focus on your own work. What would change if you also considered one teammate's win?",
+      "signal": "axis3:self",
+      "next": "decision_radius_summary"
+    },
+    "reflect_radius_others": {
+      "id": "reflect_radius_others",
+      "type": "reflection",
+      "text": "You're thinking beyond yourself. That's a transcending mindset – it builds culture.",
+      "signal": "axis3:others",
+      "next": "decision_radius_summary"
+    },
+    "decision_radius_summary": {
+      "id": "decision_radius_summary",
+      "type": "decision",
+      "text": "Based on your reflection so far, which area would you like to explore deeper?",
+      "options": [
+        "Locus of control (victim/victor)",
+        "Orientation (entitlement/contribution)",
+        "Radius (self/others)"
+      ],
+      "next": {
+        "Locus of control (victim/victor)": "q_locus_2",
+        "Orientation (entitlement/contribution)": "q_orientation_2",
+        "Radius (self/others)": "q_radius_2"
+      }
+    },
+    "q_locus_2": {
+      "id": "q_locus_2",
+      "type": "question",
+      "text": "Was there a moment today you felt powerless? How did you respond?",
+      "options": [
+        "I accepted it and moved on.",
+        "I found a small way to take back control."
+      ],
+      "next": {
+        "I accepted it and moved on.": "reflect_locus_victim_deep",
+        "I found a small way to take back control.": "reflect_locus_victor_deep"
+      }
+    },
+    "reflect_locus_victim_deep": {
+      "id": "reflect_locus_victim_deep",
+      "type": "reflection",
+      "text": "Acceptance can be wise, but pairing it with one proactive step could shift your energy tomorrow.",
+      "signal": "axis1:external",
+      "next": "summary_node"
+    },
+    "reflect_locus_victor_deep": {
+      "id": "reflect_locus_victor_deep",
+      "type": "reflection",
+      "text": "Taking even tiny action reinforces agency. Well done.",
+      "signal": "axis1:internal",
+      "next": "summary_node"
+    },
+    "q_orientation_2": {
+      "id": "q_orientation_2",
+      "type": "question",
+      "text": "When you received praise or feedback today, what was your first thought?",
+      "options": [
+        "'Finally, someone noticed my work.'",
+        "'I'm glad I could help – how can I do more?'"
+      ],
+      "next": {
+        "'Finally, someone noticed my work.'": "reflect_orientation_entitlement_deep",
+        "'I'm glad I could help – how can I do more?'": "reflect_orientation_contribution_deep"
+      }
+    },
+    "reflect_orientation_entitlement_deep": {
+      "id": "reflect_orientation_entitlement_deep",
+      "type": "reflection",
+      "text": "Wanting recognition is human. What if you celebrated someone else's win first tomorrow?",
+      "signal": "axis2:entitlement",
+      "next": "summary_node"
+    },
+    "reflect_orientation_contribution_deep": {
+      "id": "reflect_orientation_contribution_deep",
+      "type": "reflection",
+      "text": "Your focus on helping is a superpower. Keep nurturing it.",
+      "signal": "axis2:contribution",
+      "next": "summary_node"
+    },
+    "q_radius_2": {
+      "id": "q_radius_2",
+      "type": "question",
+      "text": "Think of one challenge you faced today. Who else might have faced something similar?",
+      "options": [
+        "No one – it was unique to me.",
+        "Probably a few teammates – we're in this together."
+      ],
+      "next": {
+        "No one – it was unique to me.": "reflect_radius_self_deep",
+        "Probably a few teammates – we're in this together.": "reflect_radius_others_deep"
+      }
+    },
+    "reflect_radius_self_deep": {
+      "id": "reflect_radius_self_deep",
+      "type": "reflection",
+      "text": "Every challenge feels personal. Yet connecting with others often lightens the load.",
+      "signal": "axis3:self",
+      "next": "summary_node"
+    },
+    "reflect_radius_others_deep": {
+      "id": "reflect_radius_others_deep",
+      "type": "reflection",
+      "text": "You see the collective. That's rare and powerful – it builds psychological safety.",
+      "signal": "axis3:others",
+      "next": "summary_node"
+    },
+    "summary_node": {
+      "id": "summary_node",
+      "type": "summary",
+      "text": "",
+      "next": "end"
+    },
+    "end": {
+      "id": "end",
+      "type": "end",
+      "text": "Thank you for reflecting. Carry one insight into tomorrow."
+    }
+  },
+  "start_node_id": "start"
+}
